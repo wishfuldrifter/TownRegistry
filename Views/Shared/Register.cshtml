@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Register Resident";
+}
+<div>
+    <h1>REGISTER RESIDENT</h1>
+   <div class="column">
+        <input type="text" name="txtFirstName" id="txtFirstName" placeholder="First Name">
+        <br>
+        <br>
+        <input type="text" name="txtMiddleName" id="txtMiddleName" placeholder="Middle Name">
+        <br>
+        <br>
+        <input type="text" name="txtLastName" id="txtLastName" placeholder="Last Name">
+    </div>
+    <div class="column">
+        <input type="text" name="txtOccupation" id="txtOccupation" placeholder="Occupation">
+        <form>
+            <p>Gender:</p>
+            <input type="radio" name="rgGender" id="rdMale" value="male">
+            <label for="rdMale">Male</label>
+            <br>
+            <br>
+            <input type="radio" name="rgGender" id="rdFemale" value="female">
+            <label for="rdMale">Female</label>
+            <br>
+            <br>
+            <input type="radio" name="rgGender" id="rdOther" value="other">
+            <label for="rdOther">Other</label>
+        </form>
+    </div>
+    <div class="column">
+        <select name="ddStatus" id="ddStatus">
+            <option value="">--Please select a status--</option>
+            <option value="living">Living</option>
+            <option value="deceased">Deceased</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <br>
+        <br>        
+        <label for="dtBirth">Date of Birth:</label>
+        <input type="date" name="dtBirth" id="dtBirth" placeholder="mm/dd/yyyy">
+        <input type="text" name="txtPlaceOfBirth" id="txtPlaceOfBirth" placeholder="Place of Birth">
+        <br>
+        <br>        
+        <label for="dtDeath">Date of Death:</label>
+        <input type="date" name="dtDeath" id="dtDeath" placeholder="mm/dd/yyyy">
+        <input type="text" name="txtPlaceOfDeath" id="txtPlaceOfDeath" placeholder="Place of Death">
+        <br>
+        <br>
+    </div>
+    <div class="fullcolumn">
+        <button type="submit">Submit Entry</button>
+    </div>
+</div>
